@@ -24,7 +24,7 @@ bio: >- # this means to ignore newlines until "baseurl:"
   I believe in the power of technology to transform businesses and improve lives. My vision is to leverage my expertise to create solutions that are not only technically sound but also user-centric and impactful. I am committed to staying at the forefront of technological advancements, always looking for ways to innovate and improve. Let’s build the future together.
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, I'm Richard Kellermeyer, an Application Architect with a passion for using technology to simplify and improve our lives. With over 20 years in the industry, I've seen the impact well-crafted software can have on businesses of all sizes.  My experience spans the full spectrum, from architecting large-scale enterprise platforms to building user-friendly marketing websites. I'm equally comfortable leading teams and diving into the code myself, always striving for innovative solutions that deliver real value.  When I'm not immersed in the digital world, you can usually find me in the kitchen, experimenting with new recipes. Let's connect and discuss how my diverse skillset can help your business thrive.
-baseurl: "/Me" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: TechSuperSaiyan
 github_username:  rkellermeyer
