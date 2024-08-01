@@ -1,0 +1,28 @@
+// Mixins (from our previous discussion)
+@mixin container { 
+  width: 100%;
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: 0 $gutter-width / 2; // Half gutter on each side
+}
+
+@mixin row($justify: flex-start) { // Default to flex-start
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 (-$gutter-width / 2);
+  justify-content: $justify; 
+}
+
+@mixin col($columns, $breakpoint: null) {
+  flex: 0 0 percentage($columns / $grid-columns); // Calculate column width
+  max-width: percentage($columns / $grid-columns);
+  padding: 0 $gutter-width / 2;
+
+  @if $breakpoint {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content; // Include styles for this breakpoint
+    }
+  } @else {
+    @content; // Include default styles if no breakpoint
+  }
+}

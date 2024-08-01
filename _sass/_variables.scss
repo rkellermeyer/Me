@@ -1,0 +1,11 @@
+// Variables (adjust as needed)
+$grid-columns: 12;
+$gutter-width: 60px;
+$max-width: 1200px;
+
+$breakpoints: (
+  small: 576px,
+  medium: 768px,
+  large: 992px,
+  extra-large: 1200px
+);

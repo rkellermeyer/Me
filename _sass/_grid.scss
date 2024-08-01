@@ -1,0 +1,53 @@
+.container {
+  @include container;
+}
+
+.row {
+  @include row(space-around); // Or space-between, depending on your preference
+}
+
+// Default Column Styles
+.col-12 {
+  @include col(12); // Full width on all screen sizes by default
+}
+.col-8 {
+  @include col(8); // Two-thirds width column
+}
+.col-6 {
+  @include col(6); // Half-width column
+}
+.col-4 {
+  @include col(4); // One-third width column
+}
+.col-3 {
+  @include col(3); // One-quarter width column
+}
+
+
+// Responsive Column Styles
+@media (min-width: map-get($breakpoints, medium)) { 
+  .col-md-3 {
+    @include col(3); // One-quarter width on medium screens and up
+  }
+  .col-md-4 {
+    @include col(4); // One-third width on medium screens and up
+  }
+  .col-md-6 {
+    @include col(6); // Half-width on medium screens and up
+  }
+  .col-md-8 {
+    @include col(8); // Two-thirds width on medium screens and up
+  }
+}
+
+@media (min-width: map-get($breakpoints, large)) { 
+  .col-lg-4 {
+    @include col(4); // One-third width on large screens and up
+  }
+}
+
+@media (min-width: map-get($breakpoints, extra-large)) { 
+  .col-xl-3 {
+    @include col(3); // One-quarter width on extra-large screens
+  }
+}

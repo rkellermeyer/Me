@@ -1,0 +1,38 @@
+---
+layout: default
+---
+
+<div class="row">
+  <div class="col-2"></div> 
+  <div class="col-8 content-area">
+    <div class="row">
+      <div class="col-4 right-align">
+        <div class="name-container">
+          <p class="name">{{ site.title }}</p>
+        </div>
+      </div>
+      <div class="col-8"></div>
+    </div>
+    <div class="row">
+      <div class="col-4 right-align">
+        <div class="name-container"></div>
+        <img src="/assets/images/headshot.png" alt="Site Image" />
+        <p class="bio">{{ site.bio }}</p>
+      </div>
+      <div class="col-8 description-container">
+        <p class="description">{{ site.description }}</p>
+      </div>
+    </div>
+
+    {%- comment -%} <div class="row">
+      <div class="col-12">Your Content Here 1</div>
+    </div>
+    <div class="row">
+      <div class="col-12">Your Content Here 2</div>
+    </div>
+    <div class="row">
+      <div class="col-12">Your Content Here 3</div>
+    </div> {%- endcomment -%}
+  </div>
+  <div class="col-2"></div>
+</div>
