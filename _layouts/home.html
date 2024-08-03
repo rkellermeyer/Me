@@ -1,64 +1,90 @@
 ---
 layout: default
 ---
+<div class="row bio-row">
+  <div class="col-12 col-md-6 bio-image-box">
+      <div class="bio-image">      
+        <img src="/Me/assets/images/headshot.png" alt="I believe in the power of technology to advance and enhance lives by improving consciousness, awareness, and empathy." class="active">
+        <img src="/Me/assets/images/saiyan_1.jpeg" alt="I believe in the power of technology to advance and enhance lives by improving consciousness, awareness, and empathy.">
+        <p class="bio">{{site.bio}}</p>
+      </div>
+  </div>
+  <div class="col-12 col-md-6 quote-col grid-container grid-item">
+    <h2 class="skills">About Me</h2>
+    <strong class="quote">My name is Richard Kellermeyer, and I'm a firm believer that technology should simplify our lives, not complicate them. As a veteran Technology Leader and seasoned Application Architect with a wealth of experience and knowledge, I've seen the transformative power of well-crafted software. I'm dedicated to leading teams towards creating solutions that are both innovative and user-friendly. When I'm not immersed in the digital world, you'll likely find me honing my culinary skills and enjoying good music. Let's connect and make beautiful software together!</strong>
+  </div>      
+</div>
 
-<div class="row">
-  <div class="col-12">
-    <h1 class="name">{{site.title}}</h1>
+<div class="row skills-col">
+  <div class="col-6 grid-container">
+    <h2 class="skills">Skills</h2>
+  </div>
+  <div class="col-6">
+    <h3 class="skills-item">Architectural Mastery</h3>
+    <p class="skill-description">Expertise in Enterprise-as-a-Service (EaaS), Platform-as-a-Service (PaaS), and Software-as-a-Service (SaaS) models, designing and implementing scalable and efficient service architectures.</p>
+    <h3 class="skills-item">Agile Development</h3>
+    <p class="skill-description">Proficient in Agile methodologies, including Scrum and Kanban, to deliver high-quality software solutions on time and within budget.</p>
+    <h3 class="skills-item">DevOps</h3>
+    <p class="skill-description">Experience in implementing DevOps practices to automate and streamline the software development lifecycle, including continuous integration and continuous deployment (CI/CD).</p>
+    <h3 class="skills-item">Cloud Computing</h3>
+    <p class="skill-description">Knowledge of cloud platforms such as AWS, Azure, and Google Cloud, with expertise in deploying and managing applications in cloud environments.</p>
+    <h3 class="skills-item">User Experience (UX)</h3>
+    <p class="skill-description">A keen focus on creating intuitive and engaging user interfaces that enhance user satisfaction and usability.</p>
   </div>
 </div>
-<div class="row">
-  <div class="col-12 col-md-6 bio-glow">
-  <div class="bio-image">
-    {% assign images = site.data.images %}
-    {% for image in images %}
-    <img src="{{ image.url }}" alt="{{ image.alt }}" {% if forloop.first %}class="active"{% endif %}>
-    {% endfor %}
+
+<div class="row skills-col">
+  <div class="col-6 grid-container">
+    <h2 class="skills">Programming Languages</h2>
+    <ul class="tech-list">
+      <li>Ruby</li>
+      <li>JavaScript</li>
+      <li>Python</li>
+      <li>SQL/NoSQL</li>
+      <li>HTML/CSS</li>
+    </ul>
   </div>
-  <div class="bio-content">
-    <h2>{{ site.title }}</h2> 
-    <p>{{ site.description }}</p>
-    <p>{{ site.bio }}</p> 
+  <div class="col-6 grid-container">
+    <h2 class="skills">Frameworks</h2>
+    <ul class="tech-list">
+      <li>Rails</li>
+      <li>NodeJS</li>
+      <li>Flask</li>
+      <li>MySQL, PostgreSQL, MongoDB, Redis</li>
+      <li>ReactJS, VueJS, Angular</li>
+    </ul>
   </div>
 </div>
-</div>
+
+<div class="row skills-col">
   <div class="col-12 col-md-6">
-    <h1></h1>
-    <p>{{site.description}}</p>
+    <h2 class="skills">Professional Journey</h2>
+    <p class="skill-description">Throughout my career, I have taken on various roles that allowed me to grow as a leader and technologist, as well as a person. My journey has been marked by a commitment to continuous learning and a passion for innovation. I have led teams through complex projects, delivered high-quality software solutions, and advocated for best practices in software development.</p>
+    <p class="skill-description">My vision is to leverage my expertise to create solutions that are not only technically sound but also user-centric and impactful. I am committed to staying at the forefront of technological advancements, always looking for ways to innovate and improve</p>
+    <p class="skill-description">Over the years, I have held various roles in the software development industry, including, among other experiences:</p>
   </div>
-</div>
-<div class="row">
-  <div class="col-12">
-    <h2>Recent Posts</h2>
-    <ul>
-      {% for post in site.posts %}
-        <li>
-          <a href="{{ post.url }}">{{ post.title }}</a>
-          <span>{{ post.date | date: "%B %d, %Y" }}</span>
-        </li>
-      {% endfor %}
+  <div class="col-12 col-md-6">
+    <ul class="tech-list">
+      <li>
+        <h3 class="skills-item">Director Of Development</h3>
+        <p class="skill-description">Directed the development of software products and managed teams of managers.</p>
+      </li>
+      <li>
+        <h3 class="skills-item">Engineering Manager</h3>
+        <p class="skill-description">Managed multiple teams of engineers and oversaw the delivery of software projects.</p>
+      </li>
+      <li>
+        <h3 class="skills-item">Product Manager</h3>
+        <p class="skill-description">Defined product roadmaps, prioritized features, and worked closely with stakeholders.</p>
+      </li>
+      <li>
+        <h3 class="skills-item">Technical Lead</h3>
+        <p class="skill-description">Managed a team of developers and provided technical guidance on projects.</p>
+      </li>
+      <li>
+        <h3 class="skills-item">Software Engineer</h3>
+        <p class="skill-description">Developed and maintained software applications for clients in various industries.</p>
+      </li>
     </ul>
   </div>
 </div>
-<div class="row">
-  <div class="col-12">
-    <h2>Skills</h2>
-  </div>
-</div>
-<div class="row">
-  <div class="col-12">
-    <h2>Recent Projects</h2>
-    <ul>
-      {% for project in site.projects %}
-        <li>
-          <a href="{{ project.url }}">{{ project.title }}</a>
-          <span>{{ project.date | date: "%B %d, %Y" }}</span>
-        </li>
-      {% endfor %}
-    </ul>
-  </div>
-</div>
-<div class="row">
-  <div class="col-12"></div>
-</div>
-

@@ -2,17 +2,16 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="/Me/assets/css/styles.css">
     {% feed_meta %}
     {% seo %}
-    {%- comment -%} <link src="/assets/js/image_scroller.js" type="text/javascript"> {%- endcomment -%}
   </head>
   <body>
     {% include header.html %}
-    <div class="container">
+    <div class="container main">
       {{ content }}  
     </div> 
     {% include footer.html %}
-    <script src="{{ '/assets/js/image_scroller.js' | relative_url }}"></script>
+    <script src="{{ '/Me/assets/js/image_scroller.js' | relative_url }}"></script>
   </body>
 </html>

@@ -2,8 +2,17 @@
   @include container;
 }
 
+.grid-container { /* Your grid container */
+  display: grid;
+}
+
+.grid-item { /* The column where your <h2> is located */
+  display: grid; /* Make the column itself a grid */
+  align-items: center; 
+}
+
 .row {
-  @include row(space-around); // Or space-between, depending on your preference
+  @include row(space-between); // Or space-between, depending on your preference
 }
 
 // Default Column Styles
