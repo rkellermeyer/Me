@@ -4,16 +4,61 @@ layout: default
 
 <div class="row">
   <div class="col-12">
-    <h1>{{site.title}}</h1>
+    <h1 class="name">{{site.title}}</h1>
   </div>
 </div>
 <div class="row">
-  <div class="col-6 align-right">
-    <image src="/assets/images/headshot.png" alt="">
-    <p>{{site.bio}}</p>
+  <div class="col-12 col-md-6 bio-glow">
+  <div class="bio-image">
+    {% assign images = site.data.images %}
+    {% for image in images %}
+    <img src="{{ image.url }}" alt="{{ image.alt }}" {% if forloop.first %}class="active"{% endif %}>
+    {% endfor %}
   </div>
-  <div class="col-6">
+  <div class="bio-content">
+    <h2>{{ site.title }}</h2> 
+    <p>{{ site.description }}</p>
+    <p>{{ site.bio }}</p> 
+  </div>
+</div>
+</div>
+  <div class="col-12 col-md-6">
     <h1></h1>
     <p>{{site.description}}</p>
   </div>
 </div>
+<div class="row">
+  <div class="col-12">
+    <h2>Recent Posts</h2>
+    <ul>
+      {% for post in site.posts %}
+        <li>
+          <a href="{{ post.url }}">{{ post.title }}</a>
+          <span>{{ post.date | date: "%B %d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <h2>Skills</h2>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <h2>Recent Projects</h2>
+    <ul>
+      {% for project in site.projects %}
+        <li>
+          <a href="{{ project.url }}">{{ project.title }}</a>
+          <span>{{ project.date | date: "%B %d, %Y" }}</span>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12"></div>
+</div>
+

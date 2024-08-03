@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="/assets/css/styles.css">
     {% feed_meta %}
     {% seo %}
+    {%- comment -%} <link src="/assets/js/image_scroller.js" type="text/javascript"> {%- endcomment -%}
   </head>
   <body>
     {% include header.html %}
@@ -12,5 +13,6 @@
       {{ content }}  
     </div> 
     {% include footer.html %}
+    <script src="{{ '/assets/js/image_scroller.js' | relative_url }}"></script>
   </body>
 </html>
