@@ -11,7 +11,7 @@
 }
 
 body {
-  background-image: url('/Me/assets/images/blackboard-right.jpeg');
+  background-image: url('/assets/images/blackboard-right.jpeg');
   background-color: rgba(2, 30, 23, 0.7);
   color: white;
   font-family: 'Roboto Mono', sans-serif;
@@ -139,10 +139,29 @@ body {
   line-height: 2em;
 }
 
-.skills {
+.skills { font-size: 2em; }
+
+.skills, .docs {
   color: #89CA61;
-  font-size: 2em;
   font-weight: bold;
+}
+
+.docs { 
+  text-align: center;
+  text-decoration: underline; 
+  font-size: 1.5em;
+}
+
+.docs-list {
+  list-style: none;
+  text-align: center;
+
+  li {
+    a {
+      color: #89CA61;
+      text-decoration: underline;
+    }
+  }
 }
 
 .skills-item {
