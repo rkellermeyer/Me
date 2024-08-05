@@ -34,7 +34,7 @@
 
 
 // Responsive Column Styles
-@media (min-width: map-get($breakpoints, medium)) { 
+@media (max-width: map-get($breakpoints, medium)) { 
   .col-md-3 {
     @include col(3); // One-quarter width on medium screens and up
   }
