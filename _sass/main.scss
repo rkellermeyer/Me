@@ -27,9 +27,9 @@ body {
 }
 
 .main {
-  background-color: rgba(97, 97, 97, 0.5);
-  border-left: 1px solid #242424;
-  border-right: 1px solid #242424;
+  background-color: rgba(0,0,0,0.5);
+  padding: 80px;
+  box-shadow: 0 0 42px 0px rgba(0, 0, 0, 0.5);
 }
 
 .name {
@@ -119,7 +119,7 @@ body {
   // color: #89CA61;
   // font-family: "Glass Antiqua", cursive;
   font-weight: 500;
-  font-style: italic;
+  text-align: left;
   font-size: 1em;
   // text-shadow: 
     // -1px -1px 0 #b3b3b3,  /* Top-left shadow */
@@ -148,7 +148,7 @@ body {
 
 .docs { 
   text-align: center;
-  text-decoration: underline; 
+
   font-size: 1.5em;
 }
 
@@ -166,7 +166,7 @@ body {
 
 .skills-item {
   color: #89CA61;
-  text-decoration: underline;
+
   font-size: 1.25em;
   font-weight: bold;
   margin-top: .75em;
