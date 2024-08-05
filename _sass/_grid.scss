@@ -47,6 +47,9 @@
   .col-md-8 {
     @include col(8); // Two-thirds width on medium screens and up
   }
+  .col-md-12 {
+    @include col(12); // Two-thirds width on medium screens and up
+  }
 }
 
 @media (min-width: map-get($breakpoints, large)) { 
